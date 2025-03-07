@@ -1,0 +1,143 @@
+/projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Tran Minh Hoang - Web Developer">
+    <title>Projects - Tran Minh Hoang</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div id="page-loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading<span class="dot-animation">...</span></p>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Tran Minh Hoang</h1>
+                    <p class="tagline">Web Developer</p>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-switch" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <button id="toggle-menu" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html" class="active">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+        <section class="projects">
+            <div class="container">
+                <div class="project-grid">
+                    <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image" style="background-image: url('../images/project1.jpg')"></div>
+                        <div class="project-info">
+                            <h3>Podcast Website</h3>
+                            <p>A specialized website are make for user to enjoy podcast when ever they want.</p>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">SQLServer</span>
+                                <span class="tag">ASP.NET</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                                <a href="https://project1demo.com" target="_blank" rel="noopener" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn btn-small view-project" data-project="project1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="app" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image" style="background-image: url('../images/project2.jpg')"></div>
+                        <div class="project-info">
+                            <h3>Music Website</h3>
+                            <p>A music website for everybody to enjoy music from all artists.</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">SpringBoot</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                                <a href="https://project2demo.com" target="_blank" rel="noopener" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn btn-small view-project" data-project="project2">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Modal -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Tran Minh Hoang</h3>
+                    <p>Web Developer</p>
+                    <p class="footer-contact">
+                        <i class="fas fa-envelope"></i> hoangtranminh2003@gmail.com<br>
+                        <i class="fas fa-phone"></i> +84 369 930 945
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2025</span> Tran Minh Hoang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

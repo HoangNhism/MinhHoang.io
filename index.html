@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Professional Portfolio</title>
+    <meta name="description" content="Tran Minh Hoang - Student Web Developer Portfolio showcasing frontend and backend development skills">
+    <title>Tran Minh Hoang - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="description" content="Professional portfolio showcasing projects and skills">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+    <div id="page-loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading<span class="dot-animation">...</span></p>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>Your Name</h1>
-                    <p class="tagline">Web Developer & Designer</p>
+                    <h1>Tran Minh Hoang</h1>
+                    <p class="tagline">Web Developer</p>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-switch" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </div>
                 <button id="toggle-menu" aria-label="Toggle navigation menu">
                     <i class="fas fa-bars"></i>
@@ -36,7 +53,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h2>Turning Ideas Into <span class="highlight">Digital Reality</span></h2>
-                    <p>Hi! I'm a passionate developer specializing in creating beautiful, functional, and user-friendly websites and applications.</p>
+                    <p>Hi! I'm a web development with a passion for both front-end and back-end technologies.</p>
                     <div class="cta-buttons">
                         <a href="pages/projects.html" class="btn btn-primary">View My Work</a>
                         <a href="pages/contact.html" class="btn btn-secondary">Get In Touch</a>
@@ -52,132 +69,164 @@
     <main>
         <section class="skills">
             <div class="container">
-                <h2 class="section-title">My Expertise</h2>
+                <h2 class="section-title" data-aos="fade-up">My Expertise</h2>
                 <div class="skills-container">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
                         <i class="fas fa-code"></i>
-                        <h3>Web Development</h3>
-                        <p>Creating responsive and interactive websites using modern technologies.</p>
+                        <h3>Front-End Development</h3>
+                        <p>Creating responsive and interactive websites using HTML, CSS, JavaScript to build user-friendly interfaces.</p>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-paint-brush"></i>
-                        <h3>UI/UX Design</h3>
-                        <p>Designing intuitive user experiences and beautiful interfaces.</p>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-server"></i>
+                        <h3>Back-End Development</h3>
+                        <p>Building robust server applications with Node.js, C#, and Java with database integration.</p>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Mobile-First</h3>
-                        <p>Building applications that work flawlessly across all devices.</p>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-database"></i>
+                        <h3>Database Management</h3>
+                        <p>Working with both SQL and NoSQL databases to store, retrieve, and manage application data efficiently.</p>
+                    </div>
+                </div>
+                <div class="technical-skills" data-aos="fade-up">
+                    <h3>Technical Proficiency</h3>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="75"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="featured-projects">
+        <section id="projects" class="featured-projects">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
+                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
                 <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400')"></div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image" style="background-image: url('images/project1.jpg')"></div>
                         <div class="project-info">
-                            <h3>Project 1</h3>
-                            <p>A brief description of the project and technologies used.</p>
-                            <a href="pages/projects.html" class="btn btn-small">Learn More</a>
+                            <h3>Podcast Website</h3>
+                            <p>A specialized website are make for user to enjoy podcast when ever they want.</p>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">SQLServer</span>
+                                <span class="tag">ASP.NET</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HoangNhism/PodcastWebsite" target="_blank" rel="noopener" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400')"></div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image" style="background-image: url('images/project2.jpg')"></div>
                         <div class="project-info">
-                            <h3>Project 2</h3>
-                            <p>A brief description of the project and technologies used.</p>
-                            <a href="pages/projects.html" class="btn btn-small">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image" style="background-image: url('https://via.placeholder.com/600x400')"></div>
-                        <div class="project-info">
-                            <h3>Project 3</h3>
-                            <p>A brief description of the project and technologies used.</p>
-                            <a href="pages/projects.html" class="btn btn-small">Learn More</a>
+                            <h3>Music Website</h3>
+                            <p>A music website for everybody to enjoy music from all artists.</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">SpringBoot</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HoangNhism/MusicWebsite" target="_blank" rel="noopener" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="center-button">
+                <div class="center-button" data-aos="fade-up">
                     <a href="pages/projects.html" class="btn btn-primary">View All Projects</a>
                 </div>
             </div>
         </section>
-
-        <section class="testimonials">
+        
+        <section class="education">
             <div class="container">
-                <h2 class="section-title">What People Say</h2>
-                <div class="testimonial-carousel" id="testimonial-carousel">
-                    <div class="testimonial active">
-                        <p class="quote">"Working with this developer was a fantastic experience. They delivered the project on time and exceeded my expectations."</p>
-                        <p class="author">- Jane Doe, CEO</p>
-                    </div>
-                    <div class="testimonial">
-                        <p class="quote">"Incredibly talented and professional. I highly recommend their services for any web development needs."</p>
-                        <p class="author">- John Smith, Project Manager</p>
-                    </div>
-                    <div class="testimonial">
-                        <p class="quote">"The attention to detail and creative solutions provided were exactly what our project needed."</p>
-                        <p class="author">- Emily Johnson, Designer</p>
+                <h2 class="section-title" data-aos="fade-up">Education</h2>
+                <div class="education-item" data-aos="fade-up">
+                    <div class="education-year">2021 - Present</div>
+                    <div class="education-content">
+                        <h3>Bachelor in Information Technology</h3>
+                        <p class="education-institution">Ho Chi Minh University of Technology</p>
+                        <p>Major in Web Development and Software Engineering with focus on modern technologies and practices.</p>
                     </div>
                 </div>
-                <div class="carousel-controls">
-                    <button id="prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
-                    <div class="carousel-indicators">
-                        <span class="indicator active"></span>
-                        <span class="indicator"></span>
-                        <span class="indicator"></span>
-                    </div>
-                    <button id="next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-cta">
-            <div class="container">
-                <h2>Let's Work Together</h2>
-                <p>Have a project in mind? I'd love to hear about it and discuss how I can help.</p>
-                <a href="pages/contact.html" class="btn btn-primary">Contact Me</a>
             </div>
         </section>
     </main>
-
+    
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>Your Name</h3>
-                    <p>Professional Web Developer & Designer</p>
+                    <h3>Tran Minh Hoang</h3>
+                    <p>Web Developer</p>
+                    <p class="footer-contact">
+                        <i class="fas fa-envelope"></i> hoangtranminh2003@gmail.com<br>
+                        <i class="fas fa-phone"></i> +84 369 930 945
+                    </p>
                 </div>
+                
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="pages/about.html">About</a></li>
                         <li><a href="pages/projects.html">Projects</a></li>
                         <li><a href="pages/contact.html">Contact</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-social">
-                    <h4>Connect With Me</h4>
+                    <h3>Connect With Me</h3>
                     <div class="social-icons">
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/HoangNhism" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tran-minhhoang/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/hoangnhism/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
+            
             <div class="copyright">
-                <p>&copy; 2023 Your Name. All rights reserved.</p>
+                <p>&copy; <span id="current-year">2025</span> Tran Minh Hoang. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
+    
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
     <script src="js/main.js"></script>
 </body>
 </html>

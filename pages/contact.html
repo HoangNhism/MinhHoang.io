@@ -1,0 +1,227 @@
+/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tran Minh Hoang - Student Web Developer">
+    <title>Contact - Tran Minh Hoang</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div id="page-loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading<span class="dot-animation">...</span></p>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Tran Minh Hoang</h1>
+                    <p class="tagline">Web Developer</p>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-switch" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <button id="toggle-menu" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Get In Touch</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Have a question or want to work together? Reach out to me!</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h2>Contact Information</h2>
+                        <p>Feel free to reach out using any of the methods below. I'm currently looking for opportunities to apply my skills and gain experience.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method" data-aos="fade-up" data-aos-delay="100">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:hoangtranminh2003@gmail.com" class="contact-link">hoangtranminh2003@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method" data-aos="fade-up" data-aos-delay="200">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>Phone</h3>
+                                    <p><a href="tel:+84369930945" class="contact-link">+84 369 930 945</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method" data-aos="fade-up" data-aos-delay="300">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-detail">
+                                    <h3>Location</h3>
+                                    <p>Ho Chi Minh City, Vietnam</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>Connect With Me</h3>
+                            <div class="social-buttons">
+                                <a href="https://github.com/HoangNhism" target="_blank" class="social-button github" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tran-minhhoang/" target="_blank" class="social-button linkedin" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.instagram.com/hoangnhism/?hl=en" target="_blank" class="social-button instagram" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form" data-aos="fade-left">
+                        <h2>Send Me a Message</h2>
+                        <div class="form-content">
+                            <!-- Updated form with better user feedback -->
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Full Name <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <span class="input-icon"><i class="fas fa-user"></i></span>
+                                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <div class="input-wrapper">
+                                        <span class="input-icon"><i class="fas fa-pencil-alt"></i></span>
+                                        <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message <span class="required">*</span></label>
+                                    <div class="input-wrapper textarea-wrapper">
+                                        <span class="input-icon"><i class="fas fa-comment-alt"></i></span>
+                                        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-submit">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-paper-plane"></i> Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">My Location</h2>
+                <div class="map-container" data-aos="fade-up">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125412.95046799223!2d106.6278914787325!3d10.823192806312256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1709805523867!5m2!1sen!2s" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: var(--border-radius-medium);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Tran Minh Hoang</h3>
+                    <p>Web Developer</p>
+                    <p class="footer-contact">
+                        <i class="fas fa-envelope"></i> hoangtranminh2003@gmail.com<br>
+                        <i class="fas fa-phone"></i> +84 369 930 945
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/HoangNhism" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tran-minhhoang/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/hoangnhism/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2025</span> Tran Minh Hoang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>
